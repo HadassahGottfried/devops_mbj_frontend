@@ -15,3 +15,86 @@ Untracked files:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 Staging all changes...
+warning: in the working copy of 'deploy.log', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'deploy.sh', LF will be replaced by CRLF the next time Git touches it
+Committing changes with message: Automated commit message
+[main 0b2c8b8] Automated commit message
+ 3 files changed, 85 insertions(+), 1 deletion(-)
+ create mode 100644 deploy.log
+ create mode 100644 deploy.sh
+Pushing changes to GitHub...
+To https://github.com/HadassahGottfried/devops_mbj_frontend.git
+   2b85d35..0b2c8b8  main -> main
+Installing dependencies...
+
+up to date, audited 1479 packages in 5s
+
+261 packages are looking for funding
+  run `npm fund` for details
+
+16 vulnerabilities (1 low, 4 moderate, 11 high)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+Building the app...
+
+> frontend@1.0.0 build
+> react-scripts build
+
+Creating an optimized production build...
+[0;33mOne of your dependencies, babel-preset-react-app, is importing the
+"@babel/plugin-proposal-private-property-in-object" package without
+declaring it in its dependencies. This is currently working because
+"@babel/plugin-proposal-private-property-in-object" is already in your
+node_modules folder for unrelated reasons, but it [1mmay break at any time[0;33m.
+
+babel-preset-react-app is part of the create-react-app project, [1mwhich
+is not maintianed anymore[0;33m. It is thus unlikely that this bug will
+ever be fixed. Add "@babel/plugin-proposal-private-property-in-object" to
+your devDependencies to work around this error. This will make this message
+go away.[0m
+  
+Compiled successfully.
+
+File sizes after gzip:
+
+  45.52 kB (+8 B)  build\static\js\main.07a9aee2.js
+  294 B            build\static\css\main.ea0461c9.css
+
+The project was built assuming it is hosted at /.
+You can control this with the homepage field in your package.json.
+
+The build folder is ready to be deployed.
+You may serve it with a static server:
+
+  npm install -g serve
+  serve -s build
+
+Find out more about deployment here:
+
+  https://cra.link/deployment
+
+Uploading build to Google Cloud Storage (GCS)...
+Error: gsutil requires Python version 2.7 or 3.5-3.11, but a different version is installed.
+You are currently running Python 3.12
+Follow the steps below to resolve this issue:
+	1. Switch to Python 3.5-3.11 using your Python version manager or install an appropriate version.
+	2. If you are unsure how to manage Python versions, visit [https://cloud.google.com/storage/docs/gsutil_install#specifications] for detailed instructions.
+Error: gsutil upload failed!
+Starting the deployment process...
+Checking Git status...
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   deploy.log
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Staging all changes...
