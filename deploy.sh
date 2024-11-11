@@ -54,7 +54,7 @@ fi
 
 # שלב 7: העלאת קבצים ל-GCS
 echo "Uploading build to Google Cloud Storage (GCS)..."   
-gcloud storage -m cp -r ./build/* gs://hadassah-react-app-bucket   
+gcloud storage  cp -r ./build/* gs://hadassah-react-app-bucket   
 if [ $? -ne 0 ]; then
     echo "Error: gcloud storage upload failed!"  
     exit 1
