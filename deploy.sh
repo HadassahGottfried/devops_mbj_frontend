@@ -24,7 +24,7 @@ commit_message="Automated commit message"
 echo "Committing changes with message: $commit_message"    
 git commit -m "$commit_message"    
 if [ $? -ne 0 ]; then
-    echo "Error: git commit failed!"   
+    echo "Error: nothing in commit!"   
     exit 1
 fi
 
