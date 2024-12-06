@@ -5,7 +5,7 @@ function App() {
   const [message, setMessage] = useState('');
 
   const fetchData = () => {
-    fetch('http://hadassa-balancer-external-ip:5000/api')
+    fetch('http://34.117.132.147:5000	/api')
       .then(response => response.json())
       .then(data => setMessage(data.message))
       .catch(error => console.error('Error fetching data:', error));
