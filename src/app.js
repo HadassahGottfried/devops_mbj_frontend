@@ -6,7 +6,7 @@ function App() {
 
   const fetchData = () => {
     fetch('http://34.117.132.147:5000	/api') 
-    
+
       .then(response => response.json())
       .then(data => setMessage(data.message))
       .catch(error => console.error('Error fetching data:', error));
