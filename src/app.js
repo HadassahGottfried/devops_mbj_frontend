@@ -6,7 +6,7 @@ function App() {
 
   const fetchData = () => {
     fetch('http://34.0.79.143:80/api') 
-    
+
       .then(response => response.json())
       .then(data => setMessage(data.message))
       .catch(error => console.error('Error fetching data:', error));
@@ -16,7 +16,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>Welcome to the Hadassah Gottfried React App</h1>
-        <button onClick={fetchData} className="fetch-button">Fetch backend</button>
+        <button onClick={fetchData()} className="fetch-button">Fetch backend</button>
         <p>{message}</p>
       </header>
     </div>
