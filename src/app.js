@@ -5,7 +5,7 @@ function App() {
   const [message, setMessage] = useState('');
 
   const fetchData = () => {
-    fetch('http://34.165.86.38:80/api') 
+    fetch('http://34.144.202.129:80/api') 
 
       .then(response => response.json())
       .then(data => setMessage(data.message))
